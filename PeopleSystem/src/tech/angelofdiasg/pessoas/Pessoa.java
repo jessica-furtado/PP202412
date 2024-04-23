@@ -6,7 +6,7 @@ import tech.angelofdiasg.estruturasdedados.*;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private LocalDate dataNascimento;
     private Endereco endereco;
@@ -63,4 +63,6 @@ public class Pessoa {
     public void setTelsContato(ListaDeTelefonesNaoOrdenados telsContato) {
         this.telsContato = telsContato;
     }
+
+    public abstract void cadastrar();
 }
